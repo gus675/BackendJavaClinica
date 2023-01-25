@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Alta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/post_paciente.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <br>
+            <a class="nav-link" href="/index.html">Volver a Admin de Base Clinica odontologica</a>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-sm-7" style = "margin: 40px 200px">
+
+        <h3>Agregar paciente</h3>
+        <form id="add_new_paciente">
+            <div class="form-group">
+                <label class="control-label" for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="" name="nombre" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" placeholder="" name="apellido" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="email">E-mail:</label>
+                <input type="text" class="form-control" id="email" placeholder="" name="email" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="dni">Dni:</label>
+                <input type="text" class="form-control" id="dni" placeholder="número sin puntos ni espacios" name="dni" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="fecha">Fecha de Alta:</label>
+                <input type="text" class="form-control" id="fecha" placeholder="yyyy-mm-dd" name="fecha" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="dni">Domicilio/ calle:</label>
+                <input type="text" class="form-control" id="calle" placeholder="" name="calle" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="fecha">Domicilio/ N°:</label>
+                <input type="text" class="form-control" id="numero" placeholder="numero" name="numero" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="dni">Domicilio/ localidad:</label>
+                <input type="text" class="form-control" id="localidad" placeholder="" name="localidad" required></input>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="fecha">Domicilio/ provincia:</label>
+                <input type="text" class="form-control" id="provincia" placeholder="" name="provincia" required></input>
+            </div>
+            <button type="submit" class="btn btn-danger" id="btn-add-new-paciente">GUARDAR</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

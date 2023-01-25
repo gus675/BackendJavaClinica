@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Listar Turnos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/buscarXfecha.js"></script>
+
+</head>
+<body>
+<div class="container"  >
+    <br>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <br>
+            <a class="nav-link" href="/index.html">Volver a Admin de Base Clinica odontologica</a>
+        </li>
+    </ul>
+    <br>
+    <h2>Buscar Turno por fecha</h2>
+
+    <form class="row col-md-6">
+        <input class="form-control" type="text" placeholder="yyyy-mm-dd">
+        <button type="submit" class="mt-2 btn btn-primary">BUSCAR</button>
+    </form>
+</div>
+<div id="div_paciente_table" style = "margin: 50px 180px">
+    <h1>Turnos</h1>
+    <div class="row col-md-6" >
+        <table id="turnoTable" class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Paciente</th>
+                <th>Odontologo</th>
+                <th>id</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
